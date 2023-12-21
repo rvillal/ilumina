@@ -1,12 +1,13 @@
-const observer = new IntersectionObserver(entries => {
+
+const observer5 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    const square = entry.target.querySelector('.circular-progress');
+    const square5 = entry.target.querySelector('.circular-progress5');
 
     if (entry.isIntersecting) {
-	    let circularProgress = document.querySelector(".circular-progress"),
-	    progressValue = document.querySelector(".progress-value");
+	    let circularProgress = document.querySelector(".circular-progress5"),
+	    progressValue = document.querySelector(".progress-value5");
 		let progressStartValue = 0,    
-		    progressEndValue = 96,    
+		    progressEndValue = 86,    
 		    speed = 20;
 		    
 		let progress = setInterval(() => {
@@ -21,10 +22,13 @@ const observer = new IntersectionObserver(entries => {
     }
 
     // We're not intersecting, so remove the class!
-    square.classList.remove('circular-progress');
+    square5.classList.remove('circular-progress5');
   });
 });
 
-observer.observe(document.querySelector('.circular-progress'));
+
+observer5.observe(document.querySelector('.circular-progress5'));
+
+
 
 
